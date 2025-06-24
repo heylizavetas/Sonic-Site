@@ -1,0 +1,138 @@
+<!DOCTYPE html><html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pikero | Engineering Bold Ideas</title>
+  <!-- Tailwind CSS via CDN with dark mode support -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config = { darkMode: 'class' }</script>
+
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="bg-gray-900 text-gray-100">
+  <!-- Header -->
+  <header class="fixed top-0 inset-x-0 z-50 bg-transparent px-6 py-4">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <a href="#" class="text-2xl font-extrabold hover:text-teal-400 transition">Pikero</a>
+      <nav class="space-x-6 hidden md:flex">
+        <a href="#services" class="hover:text-teal-400 transition">Services</a>
+        <a href="#projects" class="hover:text-teal-400 transition">Projects</a>
+        <a href="#partners" class="hover:text-teal-400 transition">Partners</a>
+        <a href="#contact" class="hover:text-teal-400 transition">Contact</a>
+      </nav>
+      <button id="menu-btn" class="md:hidden focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 8h16M4 16h16" />
+        </svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden bg-gray-800">
+      <a href="#services" class="block px-6 py-3 hover:bg-gray-700">Services</a>
+      <a href="#projects" class="block px-6 py-3 hover:bg-gray-700">Projects</a>
+      <a href="#partners" class="block px-6 py-3 hover:bg-gray-700">Partners</a>
+      <a href="#contact" class="block px-6 py-3 hover:bg-gray-700">Contact</a>
+    </div>
+  </header>  <main class="pt-24">
+    <!-- Hero -->
+    <section class="relative h-screen bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1581091870625-b1f8c7ec868f?auto=format&fit=crop&w=1740&q=80');">
+      <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+      <div class="relative z-10 flex flex-col items-center justify-center h-full text-center px-4">
+        <h1 class="text-5xl lg:text-6xl font-black mb-6 leading-tight">Engineering Bold Ideas<br>into Reality</h1>
+        <p class="text-lg lg:text-xl mb-8 max-w-2xl font-light">Partner with us for custom electronics, IIoT, autonomous sensors, and aerospace systems—delivered locally with global expertise.</p>
+        <a href="#contact" class="bg-teal-500 hover:bg-teal-600 text-white font-semibold px-8 py-3 rounded-full shadow-lg transition">Let's Build Together</a>
+      </div>
+    </section><!-- Services -->
+<section id="services" class="py-24 bg-gray-900">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-4xl font-bold text-center mb-12">What We Do</h2>
+    <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">          
+      <div class="bg-gray-800 p-8 rounded-2xl shadow-inner hover:scale-105 transform transition">
+        <h3 class="text-2xl font-semibold mb-4">Custom Board Design</h3>
+        <p class="text-sm leading-relaxed">Optimize size, routing, power, and cost with peak performance and enhanced functionality.</p>
+      </div>
+      <div class="bg-gray-800 p-8 rounded-2xl shadow-inner hover:scale-105 transform transition">
+        <h3 class="text-2xl font-semibold mb-4">IIoT Solutions</h3>
+        <p class="text-sm leading-relaxed">Connect, monitor, and optimize processes—real-time insights, reduced downtime, and efficiency gains.</p>
+        </div>
+      <div class="bg-gray-800 p-8 rounded-2xl shadow-inner hover:scale-105 transform transition">
+        <h3 class="text-2xl font-semibold mb-4">Autonomous Sensors</h3>
+        <p class="text-sm leading-relaxed">Precision obstacle detection and navigation—seamless control for autonomous vehicles.</p>
+      </div>
+      <div class="bg-gray-800 p-8 rounded-2xl shadow-inner hover:scale-105 transform transition">
+        <h3 class="text-2xl font-semibold mb-4">Aerospace Systems</h3>
+        <p class="text-sm leading-relaxed">Robust avionics, telemetry, and control solutions for the demands of flight.</p>
+      </div>
+      <div class="bg-gray-800 p-8 rounded-2xl shadow-inner hover:scale-105 transform transition">
+        <h3 class="text-2xl font-semibold mb-4">Local Prototyping</h3>
+        <p class="text-sm leading-relaxed">Hands-on manufacturing for fast iterations, immediate revisions, and on-time delivery.</p>
+      </div>
+      <div class="bg-gray-800 p-8 rounded-2xl shadow-inner hover:scale-105 transform transition">
+        <h3 class="text-2xl font-semibold mb-4">Design & Engineering</h3>
+        <p class="text-sm leading-relaxed">From CAD drawings to embedded firmware (FPGA, ARM, STM32), we've got your back.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Featured Project -->
+<section id="projects" class="py-24">
+  <div class="max-w-5xl mx-auto px-4">
+    <h2 class="text-4xl font-bold text-center mb-12">Featured Project</h2>
+    <div class="bg-gray-800 rounded-3xl overflow-hidden shadow-lg lg:flex lg:items-center">
+      <div class="lg:w-1/2 h-64 bg-cover bg-center" style="background-image:url('https://images.unsplash.com/photo-1573497491208-6b1acb260507?auto=format&fit=crop&w=800&q=80')"></div>
+      <div class="lg:w-1/2 p-10">
+        <h3 class="text-3xl font-semibold mb-4">SONIC-1™ Airflow Sensor</h3>
+        <p class="mb-6 text-sm leading-relaxed">Engineered for underground mining, SONIC-1 delivers precise, bi-directional airflow measurement in harsh environments. Built with rugged hardware and smart firmware in partnership with leading OEMs.</p>
+        <a href="#contact" class="inline-block bg-teal-500 hover:bg-teal-600 text-white font-semibold px-6 py-2 rounded-full transition">Discuss Your Project</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Partners -->
+<section id="partners" class="py-24 bg-gray-900">
+  <div class="max-w-6xl mx-auto px-4 text-center">
+    <h2 class="text-4xl font-bold mb-12">Our Partners</h2>
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-7 gap-6 items-center">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/8/8b/Schneider_Electric_logo.svg" alt="Schneider Electric" class="h-12 mx-auto filter brightness-200">
+      <img src="https://www.weidmueller.com/resource/image/141326/portrait_ratio2x3/600/900/6ddf3fd510f624922e93c4655f9f1277/0/_/WEIDMULLER_LOGO.png" alt="Weidmüller" class="h-12 mx-auto filter brightness-200">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/0a/ARM_logo.svg" alt="ARM" class="h-12 mx-auto filter brightness-200">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/f/f0/STMicroelectronics_logo.svg" alt="STMicroelectronics" class="h-12 mx-auto filter brightness-200">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/2/29/RISC-V_Logo.svg" alt="RISC-V" class="h-12 mx-auto filter brightness-200">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/48/Raspberry_Pi_Logo.svg" alt="Raspberry Pi" class="h-12 mx-auto filter brightness-200">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/49/Sensirion_logo.svg" alt="Sensirion" class="h-12 mx-auto filter brightness-200">
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="py-24">
+  <div class="max-w-md mx-auto px-4 bg-gray-800 p-10 rounded-3xl shadow-inner">
+      <h2 class="text-3xl font-semibold text-center mb-6">Let’s Build Something Extraordinary</h2>
+    <form action="mailto:info@pikero.com" method="POST" class="space-y-4">
+      <input type="text" name="name" placeholder="Your Name" required class="w-full px-4 py-3 rounded-lg bg-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-teal-400">
+      <input type="email" name="email" placeholder="Your Email" required class="w-full px-4 py-3 rounded-lg bg-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-teal-400">
+      <input type="text" name="company" placeholder="Company" class="w-full px-4 py-3 rounded-lg bg-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-teal-400">
+      <textarea name="message" placeholder="Your Project" rows="4" class="w-full px-4 py-3 rounded-lg bg-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-teal-400"></textarea>
+      <button type="submit" class="w-full bg-teal-500 hover:bg-teal-600 text-white font-semibold py-3 rounded-full transition">Send Message</button>
+    </form>
+  </div>
+</section>
+
+  </main>  <!-- Footer -->  <footer class="bg-gray-800 text-gray-500 py-6 text-center text-sm">
+    <p>&copy; <span id="year"></span> Pikero. All rights reserved.</p>
+  </footer>  <script>
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script></body>
+</html>
